@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+  <head>
+    <title>menu-1</title>
+    <meta charset="utf-8"/>
+    <style>
+    #top {
+        width: 1000px;
+        height: 500px;
+        display: flex;
+        position: relative;
+    }
+    .top_left {
+        width: 750px;
+        height: 500px;
+    }
+    .top_right {
+        width: 250px;
+        height: 500px;
+    }
+    .top_add {
+      width: 250px;
+      height: 250px;
+      background-color: green;
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
+      opacity: 0.5;
+    }
+    .top_add p {
+      margin-left: 10px;
+      position: absolute;
+      font-weight: bold;
+    }
+    #box_all {
+      width: 1000px;
+      display: flex;
+    }
+    .box_left {
+        width: 750px;
+        height: 500px;
+    }
+    .box_right {
+        width: 250px;
+        height: 500px;
+        background-color: yellow;
+    }
+    .box1 {
+      display: flex;
+      float: left;
+      width: 250px;
+      height: 250px;
+    }
+    .box1 p{
+      margin: 10px;
+      font-weight: bold;
+    }
+    .box2 {
+      display: flex;
+      float: left;
+      width: 250px;
+      height: 250px;
+    }
+    .box_left div:nth-child(2n){
+        background-color: #d1690c;
+    }
+    .box_left div:nth-child(2n+1){
+        background-color: #5b4b41;
+    }
+    #footer {
+      width: 1000px;
+      background-color: pink;
+    }
+    .f_left {
+        width: 750px;
+        height: 40px;
+        background-color: grey;
+    }
+    .f_left span{
+        float: left;
+        font-weight: bold;
+        margin: 10px;
+        margin-left: 30px;
+    }
+    .f_left span:nth-child(n+2) {
+        position: relative;
+        margin-left: 5px;
+        padding-left: 10px;
+    }
+    .f_left span:nth-child(n+2)::after {
+        position:absolute;
+        left: 0;
+        top: 3px;
+        content: "";
+        width: 2px;
+        height: 15px;
+        background-color: pink;
+    }
+    </style>
+  </head>
+
+  <body>
+    <div id="top">
+      <div class="top_left">
+        <img src="chef_about.jpg">
+      </div>
+
+      <div class="top_right">
+        <img src="right1.jpg">
+        <img src="right2.jpg">
+      </div>
+      <div class="top_add">
+        <p>
+          <strong>GLOBAL<br>BUSINESS</strong><br><br>
+          asdfasdf asdfasdf asdfasdf asdfasdf asdf asdf asdf asdf asdf asdfasdf asdfasdf
+        </p>
+      </div>
+    </div>
+
+    <div id="box_all">
+      <div class="box_left">
+        <div class="box1">
+          <p><strong>TITLE</strong><br><br> asdfsdfasdf asdf asdf asdf asdf asdf asdf asdfsadf asdf</p>
+        </div>
+        <div class="box1">
+          <p><strong>TITLE</strong><br><br> asdfsdfasdf asdf asdf asdf asdf asdf asdf asdfsadf asdf</p>
+        </div>
+        <div class="box1">
+        </div>
+        <div class="box2">
+        </div>
+        <div class="box2">
+        </div>
+        <div class="box2">
+        </div>
+      </div>
+      <div class="box_right">
+      </div>
+    </div>
+
+    <div id="footer">
+    <div>
+    <div class="f_left">
+      <span>법적고지</span>
+      <span>이메일무단수집거부</span>
+      <span>이용약관</span>
+      <span>개인정보취급벙참</span>
+      <span>고객센터</span>
+      <span>입찰공고</span>
+    <div>
+
+  </body>
+</html>

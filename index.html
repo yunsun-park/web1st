@@ -4,25 +4,104 @@
   <title> 1st WEB</title>
   <meta charest="utf-8">
   <style>
-  #header {
+  #header li {
+    list-style: none;
+    float: left;
+    width : 12%;
     text-align: center;
+    justify-content: center;
+    align-items:center;
+    display: flex;
     height: 120px;
     margin-top: 27px;
+  }
+  #header img {
+    float: left;
+    width : 25%;
+    text-align: center;
+    height: 120px;
+    margin-top: 0px;
   }
   #main_picture {
     text-align: center;
     height: 464px;
   }
-  #icon_title_text {
+  #abcd p {
+    text-align: center;
+    margin: auto;
+    margin-top: 8%;
+  }
+  p.icon_title_text {
+    text-align: center;
+    justify-content: center;
+    align-items:center;
+    display: flex;
+    width: 150px;
+    height: 70px;
+  }
+  .icon_box {
+    float: left;
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+  }
+  .icon_box p:nth-child(2n+1){
+    float: left;
+    border-color: white;
+    border-bottom-color: #E2E2E2;
+    border-width : 2px ;
+    border-style : solid;
+    justify-content: center;
+    align-items:center;
+    width: 250px;
+  }
+  .icon_box p:nth-child(2n){
+    float: left;
+    justify-content: center;
+    align-items:center;
+    width: 80px;
+  }
+  .icon_box img {
+    display: center;
+    margin-left: 20%;
+    margin-right: 20%;
     text-align: center;
   }
-  #icon_box {
+  .chefs {
+    margin-top: 5%;
     text-align: center;
-    width: 1240px;
-  }
-  #chefs {
-    text-align: center;
+    overflow: auto;
+    width: 100%;
     height: 304px;
+    background-color: #E2E2E2;
+  }
+  #aaa {
+    margin: auto;
+    display: flex;
+    float: center;
+    width: 814px;
+    height: 304px;
+  }
+  #aaa p{
+    text-align: left;
+    justify-content: center;
+    align-items:center;
+    display: flex;
+    margin: auto;
+    width: 500px;
+    height: 100px;
+  }
+  .chefs img{
+    float: right;
+  }
+  a[target="_self"]:hover {
+    color: red;
   }
   </style>
 </head>
@@ -33,7 +112,8 @@
     <ul>
       <li>How & works</li>
       <li>Gifts</li>
-      <li>About</li>
+      <li><a href="about.html" target="_self">About</a></li>
+      <img src="logo.jpg" width="10%">
       <li>Login</li>
       <li>Members</li>
       <li>Contacts</li>
@@ -43,27 +123,41 @@
     <img src="main.jpg" width="100%">
   </div>
 
-  <p class="icon_title_text">
-    FINALLY HAS AN EASY ANSWER
-  </p>
+  <div id="abcd">
+    <p class="icon_title_text">
+      <strong>FINALLY HAS AN EASY ANSWER</strong>
+    </p>
+  </div>
 
   <div class="icon_box">
     <p>
-      A
+      <img src="icon1.jpg" width="10%">
+      asdfasdfsadfsafasdf asdf asdfasdf asdf asdfasdf asdf asdf asdfasdf asdf
     </p>
+    <p> </p>
     <p>
-      B
+      <img src="icon2.jpg" width="10%">
+      asdfasdfsadfsafasdf asdf asdfasdf asdf asdfasdf asdf asdf asdfasdf asdf
     </p>
-    <p> 
-      C
-    </p>
+    <p> </p>
     <p>
-      D
+      <img src="icon3.jpg" width="10%">
+      asdfasdfsadfsafasdf asdf asdfasdf asdf asdfasdf asdf asdf asdfasdf asdf
+    </p>
+    <p> </p>
+    <p>
+      <img src="icon4.jpg" width="10%">
+      asdfasdfsadfsafasdf asdf asdfasdf asdf asdfasdf asdf asdf asdfasdf asdf
     </p>
   </div>
 
   <div class="chefs">
-    <img src="chef.jpg" width="100%">
+    <div id="aaa">
+      <p> asdf asdf <br> asdfasdfasdf asdf asdf asdfasdf asdf asdf asdfsdf asdf
+        asdfasdf asdf asdfasdfasdf asdf asdf asdfasdf asdf asdf asdfsdf <br>asdf asdf
+        asdf asdf asdfasdfasdf asdf asdf asdfasdf asdf asdf</p>
+      <img src="chef2.png" width="30%">
+    </div>
   </div>
 
 </body>
